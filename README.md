@@ -11,7 +11,7 @@ where image1 and image2 are color input images (not filenames, but N×M×3 uint8
 Results1 runs ColorDist1 on the input images (from the test dataset on the Assignments page) and returns a table that shows the Dissimilarity Matrix.     
 
 **Usage: >> dis_mat = Results1(images)**        
-![output1](https://github.com/zhanchengqian/Image-Dissimilarity-Check/blob/master/output1.png)
+![output1](https://github.com/zhanchengqian/Image-Dissimilarity-Check/blob/master/out1.png)
 
 ## ColorDist2
 ColorDist2 measures image dissimilarity in another way: given two input images, it computes the Euclidian distance between the average R, G, and B values of the two images, producing a scalar measure of dissimilarity.       
@@ -22,4 +22,4 @@ ColorDist2 measures image dissimilarity in another way: given two input images, 
 Results2 runs ColorDist2 on the input images (from the test dataset on the Assignments page) and returns a table that shows the Dissimilarity Matrix.     
 
 **Usage: >> dis_mat = Results2(images)**   
-![output2](https://github.com/zhanchengqian/Image-Dissimilarity-Check/blob/master/output2.png)
+![output2](https://github.com/zhanchengqian/Image-Dissimilarity-Check/blob/master/out2.png)
