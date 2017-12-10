@@ -17,7 +17,7 @@ Results1 runs ColorDist1 on the input images (from the test dataset on the Assig
 ```m
 >> dis_mat = Results1(images)
 ```
-![output1](https://github.com/zhanchengqian/Image-Dissimilarity-Check/blob/master/out1.png)
+![output1](https://github.com/zhanchengqian/Image-Dissimilarity-Check/blob/master/output/out1.png)
 
 ## ColorDist2
 ColorDist2 measures image dissimilarity in another way: given two input images, it computes the Euclidian distance between the average R, G, and B values of the two images, producing a scalar measure of dissimilarity.       
@@ -35,7 +35,7 @@ Results2 runs ColorDist2 on the input images (from the test dataset on the Assig
 ```m
 >> dis_mat = Results2(images)
 ```
-![output2](https://github.com/zhanchengqian/Image-Dissimilarity-Check/blob/master/out2.png)
+![output2](https://github.com/zhanchengqian/Image-Dissimilarity-Check/blob/master/output/out2.png)
 
 ## ColorDist3
 ColorDist3 measures dissimilarity between two (24-bit color) images using a 3D histogram. Given two input images, ColorDist3 creates a normalized 3D histogram of each image, then measures the difference between the two histograms, using Euclidian distance measure, to determine the output.
@@ -53,7 +53,7 @@ Results3 runs ColorDist3 on the input images (from the test dataset on the Assig
 ```m
 >> dis_mat = Results3(images)
 ```
-![output3](https://github.com/zhanchengqian/Image-Dissimilarity-Check/blob/master/out3.png)
+![output3](https://github.com/zhanchengqian/Image-Dissimilarity-Check/blob/master/output/out3.png)
 
 ## EdgeDist1
 EdgeDist1 measures image dissimilarity in another way: given two input images, it computes an edge orientation histogram E for each image, using only the Green array of each, and then compares E1 and E2 to provide an output dissimilarity measure. E is a vector with nine values: before normalization, they are the numbers of image pixels that have edge orientation close to the eight compass directions of N, NE, E, SE, S, SW, E, and NW (i.e., each bin includes an angular range of 360/8 = 45 degrees, centered on each of the compass directions). But only edges with magnitude > alpha are counted; those with magnitude < alpha are included in the final (ninth) element of E. After computing the initial values of E, normalize it so that entries sum to 1.0. 
@@ -66,5 +66,5 @@ EdgeDist1 measures image dissimilarity in another way: given two input images, i
 ## Results4
 Results4 runs EdgeDist1 on the input images (from the test dataset on the Assignments page) and returns a table that shows the Dissimilarity Matrix.    
 
-![output4](https://github.com/zhanchengqian/Image-Dissimilarity-Check/blob/master/out4.png)
+![output4](https://github.com/zhanchengqian/Image-Dissimilarity-Check/blob/master/output/out4.png)
 
